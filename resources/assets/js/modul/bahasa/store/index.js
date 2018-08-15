@@ -5,7 +5,7 @@ import mutations from './mutations'
 import getters from './getters'
 
 const state={
-    data1:{}
+    ragamWarna:{}
 }
 //untuk mengirim data1 ke index.vue / agar ke file yg membutuhkan
 export default{

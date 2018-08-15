@@ -11,7 +11,7 @@
     </head>
     <body>
         <div id="app">
-             <vuex-example/> <!-- komponen example diambil dari asset app.js -->
+             <vuex-bahasa/> <!-- komponen example diambil dari asset app.js -->
         </div>
         <script src="{{asset('js/app.js')}}"></script>
     </body>
