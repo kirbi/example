@@ -43288,22 +43288,6 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -44321,54 +44305,26 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-md-12 col-md-offset-2" }, [
-          _c("div", { staticClass: "panel panel-default" }, [
-            _c("div", { staticClass: "panel-heading" }, [
-              _vm._v("Example Component")
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "panel-body" }, [
-              _c("div", { staticClass: "row" }, [
-                _c("div", [
-                  _c("div", { staticClass: "col-sm-6 col-md-4" }, [
-                    _c("div", { staticClass: "thumbnail" }, [
-                      _c("div", { attrs: { id: "box2" } }),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "caption" }, [
-                        _c("h3", { attrs: { id: "box1" } }),
-                        _vm._v(" "),
-                        _c("p", { attrs: { id: "box1" } }),
-                        _vm._v(" "),
-                        _c("p", [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "btn btn-primary",
-                              attrs: { href: "#", role: "button" }
-                            },
-                            [_vm._v("View!")]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "a",
-                            {
-                              staticClass: "btn btn-default",
-                              attrs: { href: "#", role: "button" }
-                            },
-                            [_vm._v("Buy!")]
-                          )
-                        ])
-                      ])
-                    ])
+  return _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-md-12 col-md-offset-2" }, [
+        _c("div", { staticClass: "panel panel-default" }, [
+          _c("div", { staticClass: "panel-heading" }, [
+            _vm._v("Example Component")
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "panel-body" }, [
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col-sm-6 col-md-4" }, [
+                _c("div", { staticClass: "thumbnail" }, [
+                  _c("img", { attrs: { src: _vm.nasa.url } }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "caption" }, [
+                    _c("h3", [_vm._v(_vm._s(_vm.nasa.title))]),
+                    _vm._v(" "),
+                    _c("p", [_vm._v(_vm._s(_vm.nasa.explanation))]),
+                    _vm._v(" "),
+                    _vm._m(0)
                   ])
                 ])
               ])
@@ -44376,6 +44332,32 @@ var staticRenderFns = [
           ])
         ])
       ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", [
+      _c(
+        "a",
+        {
+          staticClass: "btn btn-primary",
+          attrs: { href: "#", role: "button" }
+        },
+        [_vm._v("view")]
+      ),
+      _vm._v(" "),
+      _c(
+        "a",
+        {
+          staticClass: "btn btn-default",
+          attrs: { href: "#", role: "button" }
+        },
+        [_vm._v("Buy!")]
+      )
     ])
   }
 ]
@@ -44453,7 +44435,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vuex
 //function get data
 var getData = function getData(context) {
     __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get('https://api.nasa.gov/planetary/apod?api_key=NNKOjkoul8n1CH18TWA9gwngW1s1SmjESPjNoUFo').then(function (response) {
-        context.comit('UPDATE_DATA1', response.data); //response.data untuk mengirim data dalam bentuk objek
+        context.commit('UPDATE_DATA1', response.data); //response.data untuk mengirim data dalam bentuk objek
     });
 };
 /* harmony default export */ __webpack_exports__["a"] = ({
