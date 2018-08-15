@@ -1,8 +1,7 @@
 require('./bootstrap');
 window.Vue = require('vue');
 
-Vue.component('example', require('./components/Example.vue'));  
-// Vue.component('example', <h1>Hello</h1>');  
+Vue.component('vuex-example', require('./components/VuexExample.vue'));  
 
 const app = new Vue({
     el: '#app',
