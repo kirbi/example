@@ -36,28 +36,31 @@
             </div>
           </div> 
         </div>
-        
+
       </div>
     </div>
   </div>
 </template>
+
 <script>
 import store from './store'
 import {mapActions,mapGetters} from 'vuex'
+
 export default {
-    created(){
-        const STORE_KEY='$_frameProduct';
-        if(!(STORE_KEY in this.$store._modules.root._children)){ //mengecek store dengan nama store_key
-            this.$store.reqisterModule(STORE_KEY,store)
-        }
-    },
-    mounted(){
-        this.$store.dispatch('$_frameProduct/getData')
-    }, 
-    computed:{
-        ...mapGetters({
-            nasa:'$_frameProduct/data1'  //mengganti nnama data
-        })
+  name: 'FrameProduct',
+  created(){
+    const STORE_KEY='$_frameProduct';
+    if(!(STORE_KEY in this.$store._modules.root._children)){ //mengecek store dengan nama store_key
+        this.$store.reqisterModule(STORE_KEY,store)
     }
+  },
+  mounted(){
+    this.$store.dispatch('$_frameProduct/getData')
+  }, 
+  computed:{
+    ...mapGetters({
+        nasa:'$_frameProduct/data1'  //mengganti nnama data
+    })
+  }
 }
 </script>

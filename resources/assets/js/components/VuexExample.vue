@@ -4,8 +4,10 @@
 
 <script>
   import FrameProduct from 'modul/FrameProduct'
+  
   export default{
-    component: {
+    name: 'VuexExample',
+    components: {
       FrameProduct
     }
   }
