@@ -1102,9 +1102,9 @@ window._ = __webpack_require__(13);
  */
 
 try {
-    window.$ = window.jQuery = __webpack_require__(15);
+  window.$ = window.jQuery = __webpack_require__(15);
 
-    __webpack_require__(16);
+  __webpack_require__(16);
 } catch (e) {}
 
 /**
@@ -1126,9 +1126,9 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 var token = document.head.querySelector('meta[name="csrf-token"]');
 
 if (token) {
-    window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;
+  window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;
 } else {
-    console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
+  console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
 }
 
 /***/ }),
@@ -43247,13 +43247,114 @@ module.exports = Component.exports
 /* 42 */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed: SyntaxError: D:/on/example/resources/assets/js/modul/FrameProduct/index.vue: Unexpected token (49:8)\n\n\u001b[0m \u001b[90m 47 | \u001b[39m    created(){\n \u001b[90m 48 | \u001b[39m        \u001b[36mconst\u001b[39m \u001b[33mSTORE_KEY\u001b[39m\u001b[33m=\u001b[39m\u001b[32m'$_frameProduct'\u001b[39m\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 49 | \u001b[39m        \u001b[36mif\u001b[39m(\u001b[33m!\u001b[39m(\u001b[33mSTORE_KEY\u001b[39m \u001b[36min\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39m$store\u001b[33m.\u001b[39m_modules\u001b[33m.\u001b[39mroot\u001b[33m.\u001b[39m_children)){ \u001b[90m//mengecek store dengan nama store_key\u001b[39m\n \u001b[90m    | \u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 50 | \u001b[39m            \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39m$store\u001b[33m.\u001b[39mreqisterModule(\u001b[33mSTORE_KEY\u001b[39m\u001b[33m,\u001b[39mstore)\n \u001b[90m 51 | \u001b[39m        }\n \u001b[90m 52 | \u001b[39m    }\u001b[33m,\u001b[39m\u001b[0m\n");
+throw new Error("Module build failed: SyntaxError: D:/example/resources/assets/js/modul/FrameProduct/index.vue: Unexpected token (48:8)\n\n  46 |     created(){\n  47 |         const STORE_KEY='$_frameProduct',\n> 48 |         if(!(STORE_KEY in this.$store._modules.root._children)){ //mengecek store dengan nama store_key\n     |         ^\n  49 |             this.$store.reqisterModule(STORE_KEY,store)\n  50 |         }\n  51 |     },\n");
 
 /***/ }),
 /* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports={render:function(){},staticRenderFns:[]}
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-md-12 col-md-offset-2" }, [
+        _c("div", { staticClass: "panel panel-default" }, [
+          _c("div", { staticClass: "panel-heading" }, [
+            _vm._v("Example Component")
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "panel-body" }, [
+            _c("div", { staticClass: "row" }, [
+              _vm.loadingSelesai
+                ? _c("div", [
+                    _c("div", { staticClass: "col-sm-6 col-md-4" }, [
+                      _c("div", { staticClass: "thumbnail" }, [
+                        _c("img", { attrs: { src: _vm.nasa.url } }),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "caption" }, [
+                          _c("h3", [_vm._v(_vm._s(_vm.nasa.title))]),
+                          _vm._v(" "),
+                          _c("p", [_vm._v(_vm._s(_vm.nasa.explanation))]),
+                          _vm._v(" "),
+                          _vm._m(0)
+                        ])
+                      ])
+                    ])
+                  ])
+                : _c("div", [_vm._m(1)])
+            ])
+          ])
+        ])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", [
+      _c(
+        "a",
+        {
+          staticClass: "btn btn-primary",
+          attrs: { href: "#", role: "button" }
+        },
+        [_vm._v("view")]
+      ),
+      _vm._v(" "),
+      _c(
+        "a",
+        {
+          staticClass: "btn btn-default",
+          attrs: { href: "#", role: "button" }
+        },
+        [_vm._v("Buy!")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-sm-6 col-md-4" }, [
+      _c("div", { staticClass: "thumbnail" }, [
+        _c("div", { attrs: { id: "box2" } }),
+        _vm._v(" "),
+        _c("div", { staticClass: "caption" }, [
+          _c("h3", { attrs: { id: "box1" } }),
+          _vm._v(" "),
+          _c("p", { attrs: { id: "box1" } }),
+          _vm._v(" "),
+          _c("p", [
+            _c(
+              "a",
+              {
+                staticClass: "btn btn-primary",
+                attrs: { href: "#", role: "button" }
+              },
+              [_vm._v("View!")]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "btn btn-default",
+                attrs: { href: "#", role: "button" }
+              },
+              [_vm._v("Buy!")]
+            )
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {

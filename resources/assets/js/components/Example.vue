@@ -46,7 +46,7 @@
          <input type="Number" v-model="nilaiAwal"/> 
           <button v-on:click="kurang()" v-bind:disabled="nilaiAwal <2">-</button> 
           
-          <!-- table>  
+          <table>  
             <th v-for="(value,key) in gambar[1]" :key="key" ><tr>{{key}}</tr> 
             </th>
             <tbody v-for="x in gambar" :key="x.id"><td>{{ x.userId}}</td>
@@ -139,20 +139,6 @@
 
     }
   }
-
-  import Vuex from 'vuex'
-  //vuex
-  const store = new Vuex.Store({
-    state:{
-      count:0
-    },
-    mutations:{
-      increment(state){
-        state.count++
-      }
-    }
-  })
-
 
 </script>
 <style>
