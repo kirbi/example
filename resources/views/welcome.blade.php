@@ -7,12 +7,11 @@
         <link href="{{asset('css/app.css')}}" rel="stylesheet">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-
         <title>Laravel</title>
     </head>
     <body>
         <div id="app">
-            <example/> <!-- komponen example diambil dari asset app.js-->
+             <vuex-example/> <!-- komponen example diambil dari asset app.js -->
         </div>
         <script src="{{asset('js/app.js')}}"></script>
     </body>
