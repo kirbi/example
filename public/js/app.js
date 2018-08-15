@@ -1083,15 +1083,20 @@ module.exports = __webpack_require__(50);
 
 /***/ }),
 /* 12 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__store__ = __webpack_require__(61);
 __webpack_require__(13);
 window.Vue = __webpack_require__(36);
+
 
 Vue.component('vuex-example', __webpack_require__(39));
 
 var app = new Vue({
-    el: '#app'
+    el: '#app',
+    store: __WEBPACK_IMPORTED_MODULE_0__store__["a" /* default */]
 });
 
 /***/ }),
@@ -43309,14 +43314,14 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
     var STORE_KEY = '$_frameProduct';
     if (!(STORE_KEY in this.$store._modules.root._children)) {
       //mengecek store dengan nama store_key
-      this.$store.reqisterModule(STORE_KEY, __WEBPACK_IMPORTED_MODULE_0__store__["a" /* default */]);
+      this.$store.registerModule(STORE_KEY, __WEBPACK_IMPORTED_MODULE_0__store__["a" /* default */]);
     }
   },
   mounted: function mounted() {
     this.$store.dispatch('$_frameProduct/getData');
   },
 
-  computed: _extends({}, Object(__WEBPACK_IMPORTED_MODULE_1_vuex__["a" /* mapGetters */])({
+  computed: _extends({}, Object(__WEBPACK_IMPORTED_MODULE_1_vuex__["b" /* mapGetters */])({
     nasa: '$_frameProduct/data1' //mengganti nnama data
   }))
 });
@@ -43406,7 +43411,7 @@ var data1 = function data1(state) {
 /* unused harmony export install */
 /* unused harmony export mapState */
 /* unused harmony export mapMutations */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return mapGetters; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return mapGetters; });
 /* unused harmony export mapActions */
 /* unused harmony export createNamespacedHelpers */
 /**
@@ -44339,7 +44344,7 @@ var index_esm = {
 };
 
 
-/* unused harmony default export */ var _unused_webpack_default_export = (index_esm);
+/* harmony default export */ __webpack_exports__["a"] = (index_esm);
 
 
 /***/ }),
@@ -44480,6 +44485,31 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 51 */,
+/* 52 */,
+/* 53 */,
+/* 54 */,
+/* 55 */,
+/* 56 */,
+/* 57 */,
+/* 58 */,
+/* 59 */,
+/* 60 */,
+/* 61 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vuex__ = __webpack_require__(47);
+
+
+
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vuex__["a" /* default */]);
+
+/* harmony default export */ __webpack_exports__["a"] = (new __WEBPACK_IMPORTED_MODULE_1_vuex__["a" /* default */].Store({}));
 
 /***/ })
 /******/ ]);
