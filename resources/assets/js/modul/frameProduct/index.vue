@@ -45,7 +45,7 @@ import store from './store'
 import {mapActions,mapGetters} from 'vuex'
 export default {
     created(){
-        const STORE_KEY='$_frameProduct',
+        const STORE_KEY='$_frameProduct';
         if(!(STORE_KEY in this.$store._modules.root._children)){ //mengecek store dengan nama store_key
             this.$store.reqisterModule(STORE_KEY,store)
         }
