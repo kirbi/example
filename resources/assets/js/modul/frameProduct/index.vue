@@ -7,7 +7,7 @@
           <div class="panel-heading">Example Component</div>
           <div class="panel-body"> 
             <div class="row"> 
-              <div v-if="loadingSelesai"> 
+              <!-- <div v-if="loadingSelesai"> 
                 <div class="col-sm-6 col-md-4">
                   <div class="thumbnail">
                     <img :src="nasa.url"  >
@@ -18,9 +18,9 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
 
-              <div v-else>
+              <div>
                 <div class="col-sm-6 col-md-4">
                   <div class="thumbnail">
                     <div id="box2"></div>
