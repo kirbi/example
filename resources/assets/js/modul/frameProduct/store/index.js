@@ -1,7 +1,7 @@
 //file state
 
-import action from './action'
-import mutation from './mutation'
+import actions from './actions'
+import mutations from './mutations'
 import getters from './getters'
 
 const state={
@@ -11,7 +11,7 @@ const state={
 export default{
     namespaced:true,
     state,
-    action,
-    mutation,
+    actions,
+    mutations,
     getters
 }

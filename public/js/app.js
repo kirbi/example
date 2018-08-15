@@ -43331,8 +43331,8 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__action__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mutation__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__actions__ = __webpack_require__(62);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__mutations__ = __webpack_require__(63);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__getters__ = __webpack_require__(46);
 //file state
 
@@ -43346,48 +43346,14 @@ var state = {
 };/* harmony default export */ __webpack_exports__["a"] = ({
     namespaced: true,
     state: state,
-    action: __WEBPACK_IMPORTED_MODULE_0__action__["a" /* default */],
-    mutation: __WEBPACK_IMPORTED_MODULE_1__mutation__["a" /* default */],
+    actions: __WEBPACK_IMPORTED_MODULE_0__actions__["a" /* default */],
+    mutations: __WEBPACK_IMPORTED_MODULE_1__mutations__["a" /* default */],
     getters: __WEBPACK_IMPORTED_MODULE_2__getters__["a" /* default */]
 });
 
 /***/ }),
-/* 44 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_axios__);
-//untuk action
-
-
-
-//function get data
-var getData = function getData(context) {
-    __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get('https://api.nasa.gov/planetary/apod?api_key=NNKOjkoul8n1CH18TWA9gwngW1s1SmjESPjNoUFo').then(function (response) {
-        context.comit('UPDATE_DATA1', response.data); //response.data untuk mengirim data dalam bentuk objek
-    });
-};
-/* harmony default export */ __webpack_exports__["a"] = ({
-    getData: getData
-});
-
-/***/ }),
-/* 45 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var UPDATE_DATA1 = function UPDATE_DATA1(state, data) {
-    //state mengakses data yang dipakai , data satu merupaka data yang dikirim dari action
-    state.data1 = data;
-    //segala operasi dilakukan disini
-};
-
-/* harmony default export */ __webpack_exports__["a"] = ({
-    UPDATE_DATA1: UPDATE_DATA1
-});
-
-/***/ }),
+/* 44 */,
+/* 45 */,
 /* 46 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -44472,6 +44438,42 @@ if (false) {
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vuex__["a" /* default */]);
 
 /* harmony default export */ __webpack_exports__["a"] = (new __WEBPACK_IMPORTED_MODULE_1_vuex__["a" /* default */].Store({}));
+
+/***/ }),
+/* 62 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_axios__);
+//untuk action
+
+
+
+//function get data
+var getData = function getData(context) {
+    __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get('https://api.nasa.gov/planetary/apod?api_key=NNKOjkoul8n1CH18TWA9gwngW1s1SmjESPjNoUFo').then(function (response) {
+        context.comit('UPDATE_DATA1', response.data); //response.data untuk mengirim data dalam bentuk objek
+    });
+};
+/* harmony default export */ __webpack_exports__["a"] = ({
+    getData: getData
+});
+
+/***/ }),
+/* 63 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var UPDATE_DATA1 = function UPDATE_DATA1(state, data) {
+    //state mengakses data yang dipakai , data satu merupaka data yang dikirim dari action
+    state.data1 = data;
+    //segala operasi dilakukan disini
+};
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+    UPDATE_DATA1: UPDATE_DATA1
+});
 
 /***/ })
 /******/ ]);
